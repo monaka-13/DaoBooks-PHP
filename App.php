@@ -10,6 +10,10 @@ BooksDAO::initialize("Book");
 
 Page::header();
 
+if(isset($_POST['submit'])){
+  BooksDAO::addBook();
+}
+
 Page::listBooks(BooksDAO::getBooks());
 Page::addForm();
 Page::footer();
