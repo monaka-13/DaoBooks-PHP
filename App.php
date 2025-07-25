@@ -1,11 +1,17 @@
 <?php
 require_once("inc/config.php");
-require_once("inc/Entity/Book.class.php");
-require_once("inc/Entity/Page.class.php");
+require_once("inc/Entities/Book.class.php");
+require_once("inc/Entities/Page.class.php");
 require_once("inc/Util/PDOService.class.php");
-require_once("inc/Util/BookDAO.php");
+require_once("inc/Util/BooksDAO.class.php");
 require_once("log/error_log.txt");
 
+BooksDAO::initialize("Book");
 
+Page::header();
+
+Page::listBooks(BooksDAO::getBooks());
+Page::addForm();
+Page::footer();
 
 ?>

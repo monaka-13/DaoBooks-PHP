@@ -7,7 +7,7 @@ class PDOService {
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $dbname = DB_NAME;
-    private $dbport = 3306;
+    private $dbport = DB_PORT;
 
     // DSN string
     private $dsn = "";

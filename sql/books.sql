@@ -1,6 +1,3 @@
--- SQL Script Example. 
--- Notice the two dash and a white space signifying this line as a comment
-
 -- DROP the database if it exists
 -- CREATE THE DATABASE
 DROP DATABASE IF EXISTS books;
@@ -88,8 +85,7 @@ INSERT INTO Order_Items VALUES
 
 -- INSERT Book_Reviews records
 INSERT INTO Book_Reviews VALUES
-  ('0-672-31697-8', 'The Morgan book is clearly written and goes well beyond
-                     most of the basic Java books out there.'),
+  ('0-672-31697-8', 'The Morgan book is clearly written and goes well beyond most of the basic Java books out there.'),
   ('0-672-31745-1', 'This book provides a very nice introduction on how to install Linux.'),
   ('0-672-31509-2', 'This book only teaches you the basic on using GIMP. You need other books to really do something worth with GIMP'),
   ('0-672-31769-9', 'The book covers all topics related to Linux Sysadmin. However, you can find more advance stuff in the internet nowadays');
